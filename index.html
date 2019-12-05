@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>voverc</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://cdn.rawgit.com/westonganger/bootstrap-directional-buttons/master/dist/bootstrap-directional-buttons.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+      integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
+      crossorigin="anonymous"
+    />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/main.css" />
+  </head>
+  <body>
+     <header>
+       <div class="container-fluid fixed-top bg-white top-bar">
+      <nav class="navbar navbar-expand-md navbar-light">
+        <a class="navbar-brand col-sm-6" href="#">
+          <img src="./images/download.png" alt="page logo" />
+        </a>
+        <ul class="navbar-nav col-sm-6 align-items-center justify-content-end">
+          <li class="nav-item">
+            <a class="nav-link tell" href="#">778-323-8486</a>
+          </li>
+          <li class="nav-item bar"></li>
+          <li class="nav-item">
+            <a class="nav-link text-body" href="#"
+              ><i class="far fa-comment text-warning m-0"></i> Sales Chat</a
+            >
+          </li>
+        </ul>
+      </nav>
+       </div>
+    </header>
+
+    <main>
+      <div class="jumbotron text-center">
+        <div class="burger">
+          <div class="burger1"></div>
+          <div class="burger2"></div>
+          <div class="burger3"></div>
+        </div>
+         <div class="arrow-btn" >
+        <button
+          type="button"
+          class="btn btn-primary bg-white btn-arrow-right btn-outline-white text-secondary"
+        ><i class="far fa-check-circle fa-2x text-success"></i>
+          Choose number
+        </button>
+        <button
+          type="button"
+          class="btn btn-primary bg-white btn-arrow-right text-primary active"
+        ><i class="far fa-calendar-alt fa-2x">  </i>  
+          Choose plan
+        </button>
+        <button
+          type="button"
+          class="btn btn-primary bg-white btn-arrow-right text-secondary"
+        ><i class="fas fa-users fa-2x"></i> 
+          Add users
+        </button>
+        <button
+          type="button"
+          class="btn btn-primary bg-white btn-arrow-right text-secondary"
+        ><i class="fas fa-clipboard-list fa-2x"></i>
+          Checkout
+        </button>
+        </div>
+
+        <h2 class="text-dark main-title">Select a plan for your trial<i class="fas fa-info-circle text-secondary"></i></h2>
+
+        
+          <div class="card-deck container">
+        <div class="card plan-card" onclick="change(1)">
+          <h5 class="orange-head">for beginners</h5>
+            <div class="card-header bg-transparent"><h2 class="card-title">Essentials<sup>TM</sup></h2></div>
+            <div class="card-body text-left">
+                <ul class="list list-unstyled">
+                <li class="list-item card-list">Up to 10 users</li>
+                <li class="list-item card-list">Toll-free or local number</li>
+                <li class="list-item card-list">100 toll-free min/mo</li>
+                <li class="list-item card-list">4 people per video meeting</li>
+            </ul></div>
+            <div class="card-footer bg-transparent">
+                <h4 class="text-body mt-0">Price after the trial</h4>
+                <h4 class="text-secondary mb-0">from <span class="text-body">$ 29.99</span>/user/month</h4>
+            </div>
+            <div class="card-footer bg-transparent">
+                <div class="custom-control custom-radio">
+                    <input type="radio" class="custom-control-input" id="defaultUnchecked" name="defaultExampleRadios">
+                    <label class="custom-control-label" for="defaultUnchecked" id="myRadio">
+                      <p class="text-body" id="mybtn">Select this plan</p>
+                    </label>
+                    <button type="button" class="btn btn-warning con-btn" id="btn-main_1">Continue</button>
+                </div>
+            </div>
+        </div>
+        
+        
+
+
+          <div class="card plan-card" onclick="change(2)">
+            <h5 class="orange-head">recomended</h5>
+            <div class="card-header bg-transparent">
+              <h2 class="card-title">Standard<sup>TM</sup></h2>
+            </div>
+            <div class="card-body text-left">
+              <ul class="list list-unstyled">
+                <li class="list-item card-list">Unlimited users</li>
+                <li class="list-item card-list">Toll-free or local number</li>
+                <li class="list-item card-list">100 toll-free min/mo</li>
+                <li class="list-item card-list">4 people per video meeting</li>
+                <li class="list-item card-list">Unlimited internet fax</li>
+              </ul>
+            </div>
+            <div class="card-footer bg-transparent">
+              <h4 class="text-body mt-0">Price after the trial</h4>
+              <h4 class="text-secondary mb-0">from <span class="text-body">$ 34.99</span>/user/month</h4>
+            </div>
+            <div class="card-footer bg-transparent">
+              <div class="custom-control custom-radio">
+                <input type="radio" class="custom-control-input" id="defaultUnchecked1" name="defaultExampleRadios">
+                <label class="custom-control-label" for="defaultUnchecked1" id="myRadio">
+                  <p class="text-body" id="mybtn">Select this plan</p>
+                </label>
+                <button type="button" class="btn btn-warning con-btn" id="btn-main_2">Continue</button>
+              </div>
+            </div>
+          </div>
+          
+          
+
+            <div class="card plan-card" onclick="change(3)">
+              <h5 class="orange-head">MOST POPULAR</h5>
+              <div class="card-header bg-transparent">
+                <h2 class="card-title">Premium<sup>TM</sup></h2>
+              </div>
+              <div class="card-body text-left">
+                <ul class="list list-unstyled">
+                  <li class="list-item card-list">Unlimited users</li>
+                  <li class="list-item card-list">Toll-free or local number</li>
+                  <li class="list-item card-list">1,500 toll-free min/mo</li>
+                  <li class="list-item card-list">50 people per video meeting</li>
+                  <li class="list-item card-lis card-listt">Unlimited internet fax</li> 
+                </ul>
+              </div>
+              <div class="card-footer bg-transparent">
+                <h4 class="text-body mt-0">Price after the trial</h4>
+                <h4 class="text-secondary mb-0">from <span class="text-body">$ 44.99</span>/user/month</h4>
+              </div>
+              <div class="card-footer bg-transparent">
+                <div class="custom-control custom-radio">
+                  <input type="radio" class="custom-control-input" id="defaultUnchecked2" name="defaultExampleRadios">
+                  <label class="custom-control-label" for="defaultUnchecked2" id="myRadio2" ><p class="text-body" id="mybtn">Select this plan</p></label>
+                  <button type="button" class="btn btn-warning con-btn" id="btn-main_3">Continue</button>
+                </div>
+              </div>
+            </div>
+          
+
+              
+              <div class="card plan-card" onclick="change(4)">
+                <h5 class="orange-head">gold members</h5>
+                <div class="card-header bg-transparent">
+                  <h2 class="card-title">Ultimate<sup>TM</sup></h2>
+                </div>
+                <div class="card-body text-left">
+                  <ul class="list list-unstyled">
+                    <li class="list-item card-list">Unlimited users</li>
+                    <li class="list-item card-list">Toll-free or local number</li>
+                    <li class="list-item card-list">2,500 toll-free min/mo</li>
+                    <li class="list-item card-list">75 people per video meeting</li>
+                    <li class="list-item card-list">Unlimited internet fax</li>
+                    <li class="list-item card-list">Automatic call recording</li>
+                    <li class="list-item card-list">Voicemail-to-text</li>
+                  </ul>
+                </div>
+                <div class="card-footer bg-transparent">
+                  <h4 class="text-body mt-0">Price after the trial</h4>
+                  <h4 class="text-secondary mb-0">from <span class="text-body">$ 59.99</span>/user/month</h4>
+                </div>
+                <div class="card-footer bg-transparent">
+                  <div class="custom-control custom-radio">
+                    <input type="radio" class="custom-control-input" id="defaultUnchecked3" name="defaultExampleRadios">
+                    <label class="custom-control-label" for="defaultUnchecked3" id="myRadio" ><p class="text-body" id="mybtn">Select this plan</p></label>
+                    <button type="button" class="btn btn-warning con-btn" id="btn-main_4">Continue</button>
+
+                  </div>
+                </div>
+                </div>
+              </div>
+          </div>
+        </div>     
+      
+    </main>
+
+    <footer class="container-fluid foot bg-dark">
+      <div class="container">
+          <h2 class="text-center foot-title">A complete phone system</h2>
+        <div class="row">
+          <div class="col-md-4">
+            <ul class="list list-unstyled">
+              <li class="list-item foot-list"><i class="fas fa-cloud"></i> Cloud PBX</li>
+              <li class="list-item foot-list"><i class="far fa-folder"></i> Toll-free minutes er month per account</li>
+              <li class="list-item foot-list"><i class="far fa-file-alt"></i>  Ultimited internet fax</li>
+              <li class="list-item foot-list"><i class="fas fa-globe-europe"></i> Global Office<sup>TM</sup></li>
+              <li class="list-item foot-list"><i class="fas fa-fax"></i> Toll-free, local, vanity, or international numbers for voice and fax</li>
+              <li class="list-item foot-list"><i class="fas fa-atom"></i> Auto attendant and dial-by-name directory</li>
+              <li class="list-item foot-list"><i class="far fa-window-restore"></i> RingCentral for iOS, Android, Mac and Windows</li>
+            </ul>
+          </div>
+
+          <div class="col-md-4">
+            <ul class="list list-unstyled">
+              <li class="list-item foot-list"><i class="fas fa-microphone-alt"></i> Audio conferencing</li>
+              <li class="list-item foot-list"><i class="fas fa-users"></i> Online meetings</li>
+              <li class="list-item foot-list"><i class="fas fa-users-cog"></i> Team collaboration</li>
+              <li class="list-item foot-list"><i class="fas fa-user-cog"></i> Intercom</li>
+              <li class="list-item foot-list"><i class="fas fa-bars"></i> Shared lines</li>
+              <li class="list-item foot-list"><i class="fas fa-parking"></i> Call Park</li>
+              <li class="list-item foot-list"><i class="fas fa-phone-volume"></i> Call queues</li>
+              <li class="list-item foot-list"><i class="fas fa-pager"></i> Paging</li>
+              <li class="list-item foot-list"><i class="fas fa-reply-all"></i> Advanced call forwarding</li>
+            </ul>
+          </div>
+
+          <div class="col-md-4">
+            <ul class="list list-unstyled">
+              <li class="list-item foot-list"><i class="far fa-file-alt"></i> Flexible answering rules</li>
+              <li class="list-item foot-list"><i class="fas fa-share"></i> Presence based on multiple devices</li>
+              <li class="list-item foot-list"><i class="fas fa-phone-volume"></i> Call log reports</li>
+              <li class="list-item foot-list"><i class="fas fa-cogs"></i> Templates for batch configurations</li>
+              <li class="list-item foot-list"><i class="fab fa-buromobelexperte"></i> Keep your existing phone numbers</li>
+              <li class="list-item foot-list"><i class="far fa-clock"></i> FREE 24/ customer support</li>
+              <li class="list-item foot-list"><i class="far fa-clock"></i> No setup or activation fees</li>
+              <li class="list-item foot-list"><i class="far fa-user"></i> Implementation advisors, FREE when you signup for two or more users</li>
+            </ul>
+          </div>
+        </div>
+<h5 class="text-center foot-note">You get everything you need, it is really that convenient.</h5>
+      </div> 
+      <div class="row bg-white legal">
+        <div class="col-sm-12 text-center"><h5 class="text-primary">Legal</h5></div>
+      </div> 
+    </footer>
+
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript" src="./styles/main.js"></script>
+  </body>
+</html>
