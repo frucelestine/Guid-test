@@ -4,7 +4,7 @@ body {
 }
 
 @import "header";
-@import "arrow-btn";
+@import "arrow-style";
 @import "card-deck";
 @import "footer";
 @import "burger";
@@ -19,9 +19,8 @@ body {
     & .fa-info-circle{
       position: absolute;
       font-size: 12px;
-      top: 0px;
+      top: 0;
       margin-left: 10px;
     }
   }
-
 }
