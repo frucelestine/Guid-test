@@ -1,0 +1,43 @@
+// BURGER
+
+.burger{
+   height: 40px;
+   position: fixed;
+   text-align: right;
+   top: 20px;
+   right: 20px;
+   z-index: 999;
+   display: none;
+   cursor: pointer;
+   & div{
+   width: 25px;
+   height: 4px;
+   margin: 4px;
+   border-radius: 2px;
+   background-color: black;
+  }
+}
+.arrow-btn {
+  margin-bottom: 60px;
+}
+
+.btn-arrow-right {
+  position: relative;
+  margin-left: 15px;
+  padding-left: 35px !important;
+  padding-right: 35px;
+  height: 55px;
+  border: 1px solid #e8e8e8;
+  outline: none;
+}
+
+.toggler .burger1 {
+    transform: rotate(45deg) translate(7px, 0);
+  }
+
+  .toggler .burger2 {
+    opacity: 0;
+  }
+  .toggler .burger3 {
+    transform: rotate(-45deg) translate(12px, -4px);
+  }

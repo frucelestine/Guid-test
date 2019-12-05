@@ -1,0 +1,134 @@
+@media (min-width: 1200px){
+.jumbotron .container, footer .container {
+    width: 992px;
+}
+}
+
+@media (max-width: 1000px){
+.card {
+    flex: 1 0 45% !important;
+    
+}
+}
+
+@media screen and (max-width: 899px) {
+  .arrow-btn {
+    margin-bottom: 60px;
+  }
+
+  .btn-arrow-right {
+    position: relative;
+    margin-left: 15px;
+    padding-left: 15px !important;
+    padding-right: 15px;
+    height: 40px;
+    border: 1px solid #e8e8e8;
+    outline: none;
+    border-radius: 10px !important;
+  }
+
+  .far,
+  .fas {
+    margin-right: 7px;
+    font-size: 20px;
+  }
+
+  .btn-arrow-right::before {
+    display: none;
+  }
+
+  .btn-arrow-right::after {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 790px) {
+  .bar {
+    display: none;
+  }
+
+  .navbar-brand {
+    position: absolute;
+    left: -15px;
+    & img {
+      height: 20px;
+      width: 80px;
+    }
+  }
+
+  .navbar-nav {
+    position: absolute;
+    right: 0;
+    & .nav-item {
+      & .nav-link {
+        margin-left: 30px;
+        padding: 0;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 685px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .top-bar {
+    // background-color: #595959 !important;
+    height: 60px;
+    z-index: 999;
+  }
+
+//   .navbar-brand {
+//     position: absolute;
+//     left: -15px;
+//     & img {
+//       height: 20px;
+//       width: 80px;
+//     }
+//   }
+
+  .navbar-nav {
+    left: 50%;
+    transform: translateX(-50%);   
+  }
+
+.main-title{
+    font-size: 20px;
+    margin: 0 0 30px !important;
+}
+
+  .arrow-btn {
+    left: 0;
+    top: 0;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: #595959;
+    padding: 60px 0 10px;
+    z-index: 99;
+    transform: translateX(105%);
+    
+  }
+
+  .burger {
+    display: block;
+  }
+
+  .active {
+    transform: translateX(0%);
+    transition: transform 0.5s;
+  }
+  .btn-arrow-right {
+    position: relative;
+    margin: 5px 0;
+    padding-left: 15px !important;
+    padding-right: 15px;
+    height: 40px;
+    border: 1px solid #e8e8e8;
+    outline: none;
+    border-radius: 10px !important;
+  }
+}

@@ -1,0 +1,25 @@
+.top-bar{
+  z-index: 99;
+}
+
+.navbar{
+    font-weight: 700;
+}
+
+.navbar-brand {
+  & img {
+    height: 45px;
+    width: 220px;
+  }
+}
+
+.bar {
+  margin: 0 40px;
+  height: 30px;
+  width: 1px;
+  background-color: #f5f5f5;
+}
+
+.tell {
+  color: #00b7b8 !important;
+}

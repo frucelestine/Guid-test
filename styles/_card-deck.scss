@@ -1,0 +1,156 @@
+.card {
+  padding: 0 5px;
+  margin: 0 2px !important;
+  font-size: 12px;
+  margin-bottom: 60px !important;
+  background-color: #eee;
+  position: relative;
+  display: block;
+  border-radius: 5px;
+  box-sizing: border-box;
+  z-index: 9;
+  transition: background-color 0.5s;
+
+  & .card-header {
+    & .card-title {
+      position: relative;
+    }
+  }
+
+  & .card-body {
+    min-height: 225px;
+  }
+
+  & .card-footer{
+
+    & h4{
+      font-size: 15px;
+    }
+  }
+
+  & .orange-head {
+    position: absolute;
+    opacity: 0;
+    display: block;
+    height: 70px;
+    width: 100%;
+    left: 0px;
+    top: -70px;
+    line-height: 70px;
+    text-transform: uppercase;
+    color: #f7e2b6;
+    margin: 1px solid #ff8508;
+    background-color: #ff8508;
+    border-radius: 5px 5px 0 0;
+    z-index: 1;
+    transition: opacity 0.5s;
+  }
+
+  &::before {
+    content: "";
+    display: block;
+    top: 0;
+    opacity: 0;
+    height: 10px;
+    width: 100%;
+    background-color: white;
+    position: absolute;
+    left: 0;
+    border-radius: 5px 5px 0 0;
+    z-index: 9;
+    transition: opacity 0.5s;
+  }
+
+  &:hover {
+    &::before {
+      opacity: 1;
+    }
+
+    background-color: white;
+    & .orange-head {
+      opacity: 1;
+    }
+  }
+}
+
+
+sup {
+  font-size: 10px;
+  font-weight: 700;
+  position: absolute;
+  top: 8px;
+}
+
+.card-list {
+  position: relative;
+  padding: 5px 10px 5px 15px;
+  font-size: 14px;
+  line-height: 15px;
+  &::before {
+    content: "";
+    left: 0;
+    top: 50%;
+    position: absolute;
+    height: 5px;
+    width: 5px;
+    background-color: #b98563;
+    border-radius: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+.custom-control-label::before {
+  height: 20px;
+  width: 20px;
+  border: 1px solid #8aabaf;
+  top: 14px;
+  left: 33px;
+}
+
+.custom-radio .custom-control-input:checked ~ .custom-control-label::after {
+  background-image: url(../images/radio.png) !important;
+  height: 25px;
+  width: 25px;
+  top: 12px;
+  left: 30px;
+}
+
+.custom-control-input:checked ~ .custom-control-label::before {
+  background-color: transparent;
+}
+
+.custom-control-label {
+  padding: 47px 50px 76px;
+  cursor: pointer;
+}
+
+.custom-control{
+  height: 85px;
+}
+
+#mybtn {
+  text-decoration: underline;
+  position: absolute;
+  width: fit-content;
+  bottom: 40px;
+  left: 0;
+  font-size: 13px;
+}
+
+.con-btn {
+  display: none;
+  position: absolute;
+  left: 15%;
+  top: 50%;
+  width: 70%;
+  background-color: #ff8508;
+}
+
+.select {
+  display: block;
+  position: absolute;
+  left: 15%;
+  top: 49%;
+  width: 75%;
+  background-color: #ff8508;
+}

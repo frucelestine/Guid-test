@@ -1,0 +1,26 @@
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+@import "header";
+@import "arrow-btn";
+@import "card-deck";
+@import "footer";
+@import "burger";
+@import "media-qurry";
+.jumbotron {
+  padding: 110px 0 0;
+  margin: 0;
+  & .main-title {
+    position: relative;
+    margin: 40px 0 80px;
+    & .fa-info-circle{
+      position: absolute;
+      font-size: 12px;
+      top: 0px;
+      margin-left: 10px;
+    }
+  }
+
+}
